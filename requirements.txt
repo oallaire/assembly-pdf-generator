@@ -1,1 +1,2 @@
 reportlab
+cx_Freeze==5.0.2

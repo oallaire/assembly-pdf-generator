@@ -13,8 +13,6 @@ from app.ui.string_list import StringList
 
 
 class ApplicationUi(Frame):
-    NAME = "Assembly PDF Generator"
-    VERSION = "1.0.0"
 
     def print(self, value: str):
         self._console.insert(INSERT, value)
@@ -25,7 +23,7 @@ class ApplicationUi(Frame):
         super().__init__(master)
         self._root = master
         # Set initial title
-        master.wm_title(self.NAME + " " + self.VERSION)
+        master.wm_title("Assembly PDF Generator")
         # Pack
         self.pack(fill=BOTH, expand=True)
         # Create tool frame
